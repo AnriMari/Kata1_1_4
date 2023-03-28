@@ -13,7 +13,7 @@ public class Main {
 
     private final static UserService userService = new UserServiceImpl();
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         userService.createUsersTable();
         userService.saveUser("Mark", "Black", (byte) 25);
         userService.saveUser("Poll", "White", (byte) 18);
